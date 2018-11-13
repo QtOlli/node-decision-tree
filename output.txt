@@ -1,0 +1,245 @@
+
+|	color	|	size	|	name	|
+
+|	blue	|	1	|	blueberry	|
+
+|	yellow	|	3	|	banana	|
+
+|	red	|	1	|	apple	|
+
+|	green	|	2	|	apple	|
+
+|	red	|	1	|	grape	|
+
+|	orange	|	2	|	orange	|
+
+|	brown	|	4	|	coconut	|
+
+
+
+Feature count: 2
+Unique values blue,yellow,red,green,orange,brown of feature color
+Create Question: Is color == blue
+True answers: 1
+False answers: 6
+Information gain: 0.14965986394557806
+Create Question: Is color == yellow
+True answers: 1
+False answers: 6
+Information gain: 0.14965986394557806
+Create Question: Is color == red
+True answers: 2
+False answers: 5
+Information gain: 0.10204081632653061
+Create Question: Is color == green
+True answers: 1
+False answers: 6
+Information gain: 0.1020408163265305
+Create Question: Is color == orange
+True answers: 1
+False answers: 6
+Information gain: 0.14965986394557818
+Create Question: Is color == brown
+True answers: 1
+False answers: 6
+Information gain: 0.14965986394557818
+Unique values 1,3,2,4 of feature size
+Create Question: Is size >= 1
+True answers: 7
+False answers: 0
+Create Question: Is size >= 3
+True answers: 2
+False answers: 5
+Information gain: 0.15918367346938767
+Create Question: Is size >= 2
+True answers: 4
+False answers: 3
+Information gain: 0.10204081632653056
+Create Question: Is size >= 4
+True answers: 1
+False answers: 6
+Information gain: 0.14965986394557818
+Best split question[Gain: 0.15918367346938767] is: Is size >= 3
+Feature count: 2
+Unique values yellow,brown of feature color
+Create Question: Is color == yellow
+True answers: 1
+False answers: 1
+Information gain: 0.5
+Create Question: Is color == brown
+True answers: 1
+False answers: 1
+Information gain: 0.5
+Unique values 3,4 of feature size
+Create Question: Is size >= 3
+True answers: 2
+False answers: 0
+Create Question: Is size >= 4
+True answers: 1
+False answers: 1
+Information gain: 0.5
+Best split question[Gain: 0.5] is: Is size >= 4
+Feature count: 2
+Unique values brown of feature color
+Create Question: Is color == brown
+True answers: 1
+False answers: 0
+Unique values 4 of feature size
+Create Question: Is size >= 4
+True answers: 1
+False answers: 0
+Best split question[Gain: 0] is: undefined
+Feature count: 2
+Unique values yellow of feature color
+Create Question: Is color == yellow
+True answers: 1
+False answers: 0
+Unique values 3 of feature size
+Create Question: Is size >= 3
+True answers: 1
+False answers: 0
+Best split question[Gain: 0] is: undefined
+Feature count: 2
+Unique values blue,red,green,orange of feature color
+Create Question: Is color == blue
+True answers: 1
+False answers: 4
+Information gain: 0.21999999999999986
+Create Question: Is color == red
+True answers: 2
+False answers: 3
+Information gain: 0.11999999999999988
+Create Question: Is color == green
+True answers: 1
+False answers: 4
+Information gain: 0.11999999999999977
+Create Question: Is color == orange
+True answers: 1
+False answers: 4
+Information gain: 0.21999999999999986
+Unique values 1,2 of feature size
+Create Question: Is size >= 1
+True answers: 5
+False answers: 0
+Create Question: Is size >= 2
+True answers: 2
+False answers: 3
+Information gain: 0.11999999999999988
+Best split question[Gain: 0.21999999999999986] is: Is color == orange
+Feature count: 2
+Unique values orange of feature color
+Create Question: Is color == orange
+True answers: 1
+False answers: 0
+Unique values 2 of feature size
+Create Question: Is size >= 2
+True answers: 1
+False answers: 0
+Best split question[Gain: 0] is: undefined
+Feature count: 2
+Unique values blue,red,green of feature color
+Create Question: Is color == blue
+True answers: 1
+False answers: 3
+Information gain: 0.29166666666666663
+Create Question: Is color == red
+True answers: 2
+False answers: 2
+Information gain: 0.125
+Create Question: Is color == green
+True answers: 1
+False answers: 3
+Information gain: 0.1250000000000001
+Unique values 1,2 of feature size
+Create Question: Is size >= 1
+True answers: 4
+False answers: 0
+Create Question: Is size >= 2
+True answers: 1
+False answers: 3
+Information gain: 0.1250000000000001
+Best split question[Gain: 0.29166666666666663] is: Is color == blue
+Feature count: 2
+Unique values blue of feature color
+Create Question: Is color == blue
+True answers: 1
+False answers: 0
+Unique values 1 of feature size
+Create Question: Is size >= 1
+True answers: 1
+False answers: 0
+Best split question[Gain: 0] is: undefined
+Feature count: 2
+Unique values red,green of feature color
+Create Question: Is color == red
+True answers: 2
+False answers: 1
+Information gain: 0.11111111111111116
+Create Question: Is color == green
+True answers: 1
+False answers: 2
+Information gain: 0.1111111111111111
+Unique values 1,2 of feature size
+Create Question: Is size >= 1
+True answers: 3
+False answers: 0
+Create Question: Is size >= 2
+True answers: 1
+False answers: 2
+Information gain: 0.1111111111111111
+Best split question[Gain: 0.11111111111111116] is: Is color == red
+Feature count: 2
+Unique values red of feature color
+Create Question: Is color == red
+True answers: 2
+False answers: 0
+Unique values 1 of feature size
+Create Question: Is size >= 1
+True answers: 2
+False answers: 0
+Best split question[Gain: 0] is: undefined
+Feature count: 2
+Unique values green of feature color
+Create Question: Is color == green
+True answers: 1
+False answers: 0
+Unique values 2 of feature size
+Create Question: Is size >= 2
+True answers: 1
+False answers: 0
+Best split question[Gain: 0] is: undefined
+
+==============================
+
+|Is size >= 3
+|--> True:
+ |Is size >= 4
+ |--> True:
+  Predict: [object Object]
+ |--> False:
+  Predict: [object Object]
+|--> False:
+ |Is color == orange
+ |--> True:
+  Predict: [object Object]
+ |--> False:
+  |Is color == blue
+  |--> True:
+   Predict: [object Object]
+  |--> False:
+   |Is color == red
+   |--> True:
+    Predict: [object Object]
+   |--> False:
+    Predict: [object Object]
+
+
+Testing tree with training data
+
+Test value: blueberry -> predicted value: blueberry 100%
+Test value: banana -> predicted value: banana 100%
+Test value: apple -> predicted value: apple 50%,grape 50%
+Test value: apple -> predicted value: apple 100%
+Test value: grape -> predicted value: apple 50%,grape 50%
+Test value: orange -> predicted value: orange 100%
+Test value: coconut -> predicted value: coconut 100%
