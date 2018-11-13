@@ -35,6 +35,10 @@ function printDataInformation () {
 printDataInformation();
 
 
+// We use CART (Classification and Regression Trees) algorithm
+// Classification: e.g. Return a label
+// Regression: e.g. Return a price or a temperature
+
 // Create needed classes
 class Question {
     constructor (column, value) {
@@ -216,15 +220,14 @@ class Helper {
     }
 }
 
-
-// A leaf notes contains the class results
+// A leaf node contains the class results
 class Leaf {
     constructor (rows) {
         this.predictions = Helper.classCountOfData(rows)
     }
 }
 
-// Reprasents the questions and a link to the childs
+// Represents the questions and a link to the childs
 class DecisionNode {
     constructor(question, trueBranch, falseBranch) {
         this.question = question
@@ -313,13 +316,7 @@ function printLeaf (counts) {
 
     return probably;
 }
-
-
-// We use CART (Classification and Regression Trees) algorithm
-// Classification: e.g. Return a label
-// Regression: e.g. Return a price or a temperature
-
-// 
+ 
 //
 let tree = buildDecisionTree(data);
 console.log("\n==============================\n");
