@@ -215,31 +215,31 @@ Best split question[Gain: 0] is: undefined
 |--> True:
  |Is size >= 4
  |--> True:
-  Predict: [object Object]
+  Predict: coconut
  |--> False:
-  Predict: [object Object]
+  Predict: banana
 |--> False:
  |Is color == orange
  |--> True:
-  Predict: [object Object]
+  Predict: orange
  |--> False:
   |Is color == blue
   |--> True:
-   Predict: [object Object]
+   Predict: blueberry
   |--> False:
    |Is color == red
    |--> True:
-    Predict: [object Object]
+    Predict: apple, grape
    |--> False:
-    Predict: [object Object]
+    Predict: apple
 
 
 Testing tree with training data
 
 Test value: blueberry -> predicted value: blueberry 100%
 Test value: banana -> predicted value: banana 100%
-Test value: apple -> predicted value: apple 50%,grape 50%
+Test value: apple -> predicted value: apple 50%, grape 50%
 Test value: apple -> predicted value: apple 100%
-Test value: grape -> predicted value: apple 50%,grape 50%
+Test value: grape -> predicted value: apple 50%, grape 50%
 Test value: orange -> predicted value: orange 100%
 Test value: coconut -> predicted value: coconut 100%
