@@ -256,8 +256,15 @@ function buildDecisionTree (rows) {
 
 function printTree (node, spacing = "") {
     if (node instanceof Leaf) {
-        // Prints [object object], we need to fix that
-        console.log("%sPredict: %s", spacing, node.predictions);
+        // Just print the classification
+        let predictions = node.predictions;
+        let predictionsList = [];
+        //
+        Object.keys(predictions).forEach (className => {
+            predictionsList.push(className);
+        });
+
+        console.log("%sPredict: %s", spacing, predictionsList.join(", "));
         //
         return;
     }
@@ -321,6 +328,5 @@ printTree(tree);
 // Test tree
 console.log("\n\nTesting tree with training data\n");
 data.forEach(row => {
-    console.log("Test value: %s -> predicted value: %s", row[row.length - 1], printLeaf(classify(row, tree)).join(","))
+    console.log("Test value: %s -> predicted value: %s", row[row.length - 1], printLeaf(classify(row, tree)).join(", "))
 });
-
